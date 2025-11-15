@@ -8,20 +8,19 @@ public class Tabuada {
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		System.out.println("Informe um número inteiro: ");
-		int numero1 = entrada.nextInt();
+		System.out.print("Digite o número que será multiplicado: ");
+		int numero = entrada.nextInt();
 		
-		System.out.println("Informe outro número inteiro: ");
-		int numero2 = entrada.nextInt();
+		System.out.print("Digite o número máximo para tabuada: ");
+		int numeroMaximo = entrada.nextInt();
 		
-		int resultado = numero1 * numero2;
-		
-		System.out.println(resultado);
-		
+		for(int i=0; i<=numeroMaximo; i++) {
+			int resultado = numero * i;
+			System.out.println(numero + " x " + i + " = " + resultado);
+		}
+	
 		entrada.close();
 		
-		
-		
 	}
-
+	
 }
